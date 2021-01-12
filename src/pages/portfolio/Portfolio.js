@@ -35,21 +35,21 @@ class Portfolio extends Component {
         {
           idx: 4,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "b",
           title: "test4",
           contents: "test4번의 포트폴리오",
         },
         {
           idx: 5,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "a",
           title: "test5",
           contents: "test5번의 포트폴리오",
         },
         {
           idx: 6,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "a",
           title: "test6",
           contents: "test6번의 포트폴리오",
         },
@@ -77,14 +77,14 @@ class Portfolio extends Component {
         {
           idx: 10,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "a",
           title: "test10",
           contents: "test4번의 포트폴리오",
         },
         {
           idx: 11,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "b",
           title: "test11",
           contents: "test5번의 포트폴리오",
         },
@@ -112,21 +112,21 @@ class Portfolio extends Component {
         {
           idx: 15,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "b",
           title: "test15",
           contents: "test4번의 포트폴리오",
         },
         {
           idx: 16,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "a",
           title: "test16",
           contents: "test5번의 포트폴리오",
         },
         {
           idx: 17,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "a",
           title: "test17",
           contents: "test6번의 포트폴리오",
         },
@@ -154,14 +154,14 @@ class Portfolio extends Component {
         {
           idx: 21,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "b",
           title: "test21",
           contents: "test4번의 포트폴리오",
         },
         {
           idx: 22,
           image: profileImg3,
-          filterVal: "c",
+          filterVal: "a",
           title: "test22",
           contents: "test5번의 포트폴리오",
         },
@@ -215,11 +215,7 @@ class Portfolio extends Component {
       filterPortfolioArr = _portfolioArr.filter(
         (portfolio) => portfolio.filterVal === "b"
       );
-    } else if (num === 3) {
-      filterPortfolioArr = _portfolioArr.filter(
-        (portfolio) => portfolio.filterVal === "c"
-      );
-    }
+    } 
 
     filterPortfolioLength = filterPortfolioArr.length;
     _portfolioArr = filterPortfolioArr.slice(0, rowCount);
@@ -254,7 +250,7 @@ class Portfolio extends Component {
     const { showPortfolioArr, portfolioModal, portfolioInfo } = this.state;
     const { totalCount, rowCount, activePage } = this.state;
 
-    let filterList = ["전체", "웹/모바일", "편집디자인", "기타"];
+    let filterList = ["전체", "안드로이드", "웹"];
     let filterComp = filterList.map((filter, idx) => {
       return (
         <div
