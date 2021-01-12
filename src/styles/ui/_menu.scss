@@ -7,38 +7,6 @@
   text-align: -webkit-center;
   background: #fff;
 
-  // .menu {
-  //   display: flex;
-  //   padding: 10px;
-  //   width: 40%;
-  //   font-family: "NanumSquare", sans-serif;
-  //   color: #000000;
-  //   font-size: 1rem;
-
-  //   //메뉴 기본 상태
-  //   .menu-btn {
-  //     flex: 1;
-  //     cursor: pointer;
-  //     text-align: center;
-  //   }
-
-  //   //메뉴 마우스 over 됐을 때 상태
-  //   .menu-btn:hover {
-  //     color: rgb(255, 208, 0);
-  //   }
-
-  //   //메뉴 선택 되어있는 상태
-  //   .selected-menu {
-  //     color: brown;
-  //   }
-  // }
-
-  // @media (max-width: 900px) {
-  //   .menu {
-  //     flex-direction: column;
-  //   }
-  // }
-
   .menu {
     display: flex;
     justify-content: center;
@@ -130,7 +98,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #ffb000;
+    color: #0DB1B0;
     margin: 0 15px;
     font-size: 1rem;
     letter-spacing: 1px;

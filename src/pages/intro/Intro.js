@@ -20,7 +20,7 @@ class Intro extends Component {
   render() {
     return (
       <div className="intro-container">
-        <div className="intro-content">MEDIA ART &amp; WEBDESIGN</div>
+        <div className="intro-content">Android &amp; Front-end Developer</div>
       </div>
     );
   }

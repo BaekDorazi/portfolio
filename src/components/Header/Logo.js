@@ -6,7 +6,7 @@ class Logo extends Component {
     return (
       <div>
         <div className="logo-container">
-          <div className="logo">YUSUNHEE</div>
+          <div className="logo">BAEKDOHYUNG</div>
           <div className="date">{moment().format("YYYY.MM")}</div>
         </div>
       </div>

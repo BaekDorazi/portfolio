@@ -6,7 +6,7 @@ class SideNav extends Component {
 
     return (
       <div class="sidenav-container">
-        <div class="left-text">WebDesigner_yusunhee</div>
+        <div class="left-text">Developer_BaekDoHyung</div>
         <div class="right-text">{showPageName}</div>
       </div>
     );
