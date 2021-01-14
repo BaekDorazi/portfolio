@@ -9,10 +9,10 @@ class Profile extends Component {
           <div className="profile-text">Just Do It! 하는 <font>백도형</font>입니다.</div>
           <img className="profile-img" src={profileImg} />
           <div className="personality-container">
-            <span>성실함</span>
-            <span>적응을 잘하는</span>
-            <span>꼼꼼함</span>
-            <span>끈기있는</span>
+            <span># 성실함</span>
+            <span># 적응을 잘하는</span>
+            <span># 꼼꼼함</span>
+            <span># 끈기있는</span>
           </div>
         </div>
         <div className="right-contents">
