@@ -56,8 +56,7 @@ class SkillProgress extends Component {
 
     return (
       <div className="skill-progress-container" style={containerStyle}>
-        <Line percent={percent} strokeWidth="1" strokeColor={color} />
-        <div className="graph-contents">{contents}</div>
+        <Line percent={percent} strokeWidth="4" strokeColor={color} />
       </div>
     );
   }

@@ -251,19 +251,22 @@
         align-self: center;
       }
 
-      .text {
-        font-size: 13px;
-        text-align: left;
-      }
-
       .chart {
         display: flex;
         margin-bottom: 15px;
 
-        i {
-          float: left;
-          font-size: 60px;
-          margin: 20px;
+        .skill-icon-area {
+          i {
+            float: left;
+            font-size: 60px;
+            padding: 10px;
+            margin-right: 10px;
+          }
+
+          .skill-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
         }
       }
     }

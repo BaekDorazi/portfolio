@@ -60,39 +60,39 @@ class Career extends Component {
       ], //자격증 정보 json
       skillArr: [
         {
-          icon: "icon-adobephotoshop",
+          icon: "icon-java",
           percentVal: 90,
-          color: "#00c8ff",
+          color: "#007396",
           contents: "Java",
         },
         {
-          icon: "icon-adobeillustrator",
+          icon: "icon-android",
           percentVal: 90,
-          color: "#ff7c00",
+          color: "#3DDC84",
           contents: "Android",
         },
         {
-          icon: "icon-adobeindesign",
+          icon: "icon-kotlin",
           percentVal: 50,
-          color: "#fd3f93",
+          color: "#0095D5",
           contents: "Kotlin",
         },
         {
-          icon: "icon-adobeaftereffects",
+          icon: "icon-arduino",
           percentVal: 60,
-          color: "#d291ff",
+          color: "#00979D",
           contents: "Arduino",
         },
         {
-          icon: "icon-adobepremiere",
+          icon: "icon-react",
           percentVal: 70,
-          color: "#ea77ff",
+          color: "#61DAFB",
           contents: "React",
         },
         {
-          icon: "icon-embed2",
+          icon: "icon-html",
           percentVal: 70,
-          color: "#000000",
+          color: "#444444",
           contents: "HTML+CSS",
         },
       ], //skill 정보 json
@@ -125,7 +125,10 @@ class Career extends Component {
     let showSkill = skillArr.map((skill) => {
       return (
         <div className="chart">
-          <i className={skill.icon}></i>
+          <div className="skill-icon-area">
+            <i className={skill.icon} />
+            <div className="skill-name">{skill.contents}</div>
+          </div>
           <SkillProgress
             isPageFocus={isPageFocus}
             percentVal={skill.percentVal}
