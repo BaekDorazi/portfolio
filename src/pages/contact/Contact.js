@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 import WorkspaceHwky from "components/Illustrations/WorkspaceHwky";
-import WorkingLatePukg from "components/Illustrations/WorkingLatePukg";
-import Rpm6 from "components/Illustrations/Rpm6";
-
 class Contact extends Component {
   render() {
     return (
@@ -62,44 +59,30 @@ class Contact extends Component {
 
         <div className="image-area">
           <ul>
-            {/* <li>
-              <div class="image">
-                <WorkingLatePukg />
-              </div>
-              <div class="shadow"></div>
-            </li> */}
             <li>
               <div class="image">
                 <WorkspaceHwky />
               </div>
               <div class="shadow"></div>
             </li>
-            {/* <li>
-              <div class="image">
-                <Rpm6 />
-              </div>
-              <div class="shadow"></div>
-            </li> */}
           </ul>
 
           <div className="stats">
             <div>
-              <i className="icon-bubbles box" onClick={this.test}>
-                {" "}
-                {/* {!talkClick ? "talk" : "yusunhee18"} */}
-                talk
-              </i>
+              <a href="https://open.kakao.com/o/sEJSdtPc" target="_blank">
+                <i className="icon-bubbles box"> talk</i>
+              </a>
             </div>
             <div>
-              <i className="icon-drawer2 box"> mail</i>
+              <i className="icon-mail box"> mail</i>
             </div>
             <div>
-              <a href="https://www.instagram.com/yusunhee_/" target="_blank">
+              <a href="https://www.instagram.com/ana_zombi/" target="_blank">
                 <i className="icon-instagram box"> sns</i>
               </a>
             </div>
             <div>
-              <a href="https://github.com/yusunhee" target="_blank">
+              <a href="https://github.com/BaekDorazi" target="_blank">
                 <i className="icon-github box"> git</i>
               </a>
             </div>

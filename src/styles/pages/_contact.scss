@@ -142,6 +142,7 @@
     ul {
       display: flex;
       list-style: none;
+      justify-content: center;
 
       //가로 사이즈가 1145px 미만이면
       @media (max-width: 1144px) {
@@ -226,9 +227,9 @@
 
     //mail, sns, git
     .stats {
-      text-align: left;
-      margin: 0 0 75px 10px;
-      align-self: flex-end;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
 
       div {
         a:link {
@@ -246,7 +247,7 @@
       }
 
       .box {
-        font-size: 20px;
+        font-size: 2rem;
 
         &:hover {
           color: #fff;
