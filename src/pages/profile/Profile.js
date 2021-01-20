@@ -45,18 +45,18 @@ class Profile extends Component {
         iconName: "축구",
       },
       {
-        iconClassName: "icon-jewellery",
-        iconArr: ["path1", "path2", "path3", "path4"],
-        iconName: "금속공예",
+        iconClassName: "icon-jewellery", //아이콘 보여주기 위한 이름
+        iconArr: ["path1", "path2", "path3", "path4"], //아이콘 이미지들
+        iconName: "금속공예", //아이콘 이름
       },
     ];
 
     let profileBlockArr = [
       {
-        frontTitle: "E",
-        restTitle: "ducation",
-        arr: educationArr,
-        compStatus: 1,
+        frontTitle: "E", //앞글자
+        restTitle: "ducation", //나머지 글자
+        arr: educationArr, //내용
+        compStatus: 1, //컴포넌트 다른거를 위한 구분자(1:Education, Experiences, Work 2:Hobby)
       },
       {
         frontTitle: "E",
@@ -92,14 +92,14 @@ class Profile extends Component {
       } else if (profile.compStatus === 2) {
         arrComp = profile.arr.map((elem) => {
           let iconArr = elem.iconArr.map((iconElem) => {
-            return <span class={iconElem}></span>;
+            return <span class={iconElem} />;
           });
           return (
             <div>
               <div className="icon-font">
                 <span class={elem.iconClassName}>{iconArr}</span>
+                {elem.name}
               </div>
-              {elem.name}
             </div>
           );
         });
@@ -112,9 +112,7 @@ class Profile extends Component {
             <font className="rest-title">{profile.restTitle}</font>
           </div>
           {profile.compStatus === 1 ? (
-            <div>
-              <ul>{arrComp}</ul>
-            </div>
+            <ul>{arrComp}</ul>
           ) : (
             <div className="hobby-block">{arrComp}</div>
           )}
