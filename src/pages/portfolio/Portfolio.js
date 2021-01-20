@@ -215,7 +215,7 @@ class Portfolio extends Component {
       filterPortfolioArr = _portfolioArr.filter(
         (portfolio) => portfolio.filterVal === "b"
       );
-    } 
+    }
 
     filterPortfolioLength = filterPortfolioArr.length;
     _portfolioArr = filterPortfolioArr.slice(0, rowCount);
@@ -275,7 +275,8 @@ class Portfolio extends Component {
             <span />
             <span />
             <span />
-            <div>{portfolio.title}</div>
+            <div className="portfolio-title">{portfolio.title}</div>
+            <div className="portfolio-dim" />
             <img src={portfolio.image} />
           </div>
         </div>
