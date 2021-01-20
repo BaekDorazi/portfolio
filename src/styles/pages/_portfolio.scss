@@ -60,7 +60,6 @@
 
   .list-container {
     flex: 8.5;
-    padding: 30px;
     background: #fff;
 
     //포트폴리오 리스트
@@ -77,6 +76,7 @@
 
       .screen {
         position: relative;
+        margin: 0 15px 7px 15px;
       }
 
       .screen img {
@@ -137,7 +137,8 @@
         top: 50%;
         left: 50%;
         color: white;
-        font-size: 20pt;
+        font-size: 2rem;
+        transform: translateX(-50%) translateY(-50%)
       }
     }
   }
