@@ -51,11 +51,11 @@
     flex: 1;
     height: 100%;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+    grid-template-rows: 0.2fr 0.6fr 0.2fr 0.6fr;
 
     .profile-block {
       text-align: left;
-      padding: 3%;
+      padding: 2% 3% 2% 3%;
 
       .title {
         padding-left: 1rem;
