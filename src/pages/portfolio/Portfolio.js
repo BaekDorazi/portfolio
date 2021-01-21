@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import profileImg from "../../images/screensaver_01.png";
 import profileImg2 from "../../images/homepage_01.png";
 import profileImg3 from "../../images/webbanner_01.png";
+import portfolioTest from "../../images/portfolio_test.png";
 import Pagination from "components/Pagination";
 import PortfolioModal from "components/PortfolioModal/PortfolioModal";
 
@@ -23,7 +24,7 @@ class Portfolio extends Component {
         },
         {
           idx: 2,
-          image: profileImg,
+          image: portfolioTest,
           filterVal: ["android", "web"],
           title: "KT GIGA 스마트팜(통합관제시스템)",
           term: "2018.06 - 2020.09",
