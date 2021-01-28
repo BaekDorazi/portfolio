@@ -22,6 +22,7 @@ class Portfolio extends Component {
           ide: "VS Code",
           join: "2",
           contents: ["✔ React, scss 공부 겸 웹 포트폴리오 프로젝트 진행"],
+          fontColor: "black", //배경색 어두운색일때 흰색으로 하고 아닐때 검정색으로 하기위해 추가
         },
         {
           idx: 2,
@@ -39,6 +40,7 @@ class Portfolio extends Component {
             "✔ 실시간 모니터링, 이벤트 영상조회, 영농일지 관련 화면, 페로몬트랩화면 React 사용하여 Web Client 개발",
             "✔ RESTFull API 사용",
           ],
+          fontColor: "white",
         },
         {
           idx: 3,
@@ -52,6 +54,7 @@ class Portfolio extends Component {
           contents: [
             "✔ 알림 설정 화면, On-demand 화면 Vue 사용하여 Web Client 개발",
           ],
+          fontColor: "black",
         },
         {
           idx: 4,
@@ -67,6 +70,7 @@ class Portfolio extends Component {
             "✔ 5초, 30초, 1분, 5분 시간 설정하여 영단어가 자동으로 넘어가는 기능",
             "✔ 일반모드, 차량모드 지원",
           ],
+          fontColor: "black",
         },
         {
           idx: 5,
@@ -83,6 +87,7 @@ class Portfolio extends Component {
             "✔ 바코드 스캔 기능",
             "✔ 전자문서 작성 및 관리 기능(전자송품장, 주문표 등)",
           ],
+          fontColor: "black",
         },
         {
           idx: 6,
@@ -98,6 +103,7 @@ class Portfolio extends Component {
             "✔ 현재 네트워크의 Ping, Upload, Download 속도 측정 및 결과 조회",
             "✔ Trace Route 측정 및 측정 결과 조회",
           ],
+          fontColor: "black",
         },
         {
           idx: 7,
@@ -114,6 +120,7 @@ class Portfolio extends Component {
             "✔ Admob 라이브러리 사용(광고)",
             "✔ Kakao API 사용",
           ],
+          fontColor: "black",
         },
         {
           idx: 8,
@@ -131,6 +138,7 @@ class Portfolio extends Component {
             "✔ 글 메모, 카메라 메모 기능",
             "✔ 메모 기능의 글자 속성 변경 기능",
           ],
+          fontColor: "black",
         },
         {
           idx: 9,
@@ -147,6 +155,7 @@ class Portfolio extends Component {
             "✔ 저장 후 타이머 울릴 시간 표시",
             "✔ 수학 연산 정답 확인을 통한 알림 중지",
           ],
+          fontColor: "black",
         },
       ], //포트폴리오 전체 json
       filterPortfolioArr: [], //필터상태 포트폴리오 json
@@ -261,8 +270,12 @@ class Portfolio extends Component {
             <div className="portfolio-title">{portfolio.title}</div>
             <div className="portfolio-dim" />
             <img src={portfolio.image} />
-            <div className="sub-title-container">{portfolio.subTitle}</div>
-            <div className="title-container">{portfolio.title}</div>
+            <div className={"sub-title-container " + portfolio.fontColor}>
+              {portfolio.subTitle}
+            </div>
+            <div className={"title-container " + portfolio.fontColor}>
+              {portfolio.title}
+            </div>
           </div>
         </div>
       );
