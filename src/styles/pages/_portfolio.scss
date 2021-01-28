@@ -128,6 +128,23 @@
         height: 100%;
       }
 
+      .sub-title-container {
+        position: absolute;
+        top: 8%;
+        left: 6.5%;
+        font-size: 10pt;
+        color: black;
+      }
+
+      .title-container {
+        position: absolute;
+        top: 12%;
+        left: 6.5%;
+        font-size: 17pt;
+        font-weight: 700;
+        color: black;
+      }
+
       .screen .portfolio-title {
         display: none;
       }

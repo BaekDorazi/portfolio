@@ -14,10 +14,11 @@ class Portfolio extends Component {
       portfolioArr: [
         {
           idx: 1,
-          image: profileImg,
+          image: portfolioTest,
           filterVal: ["web"],
+          subTitle: "Web",
           title: "반응형 웹 포트폴리오",
-          term: "2020.11 - 2020.01",
+          period: "2020.11 - 2020.01",
           ide: "VS Code",
           join: "2",
           contents: ["React, scss 공부 겸 웹 포트폴리오 프로젝트 진행"],
@@ -26,9 +27,10 @@ class Portfolio extends Component {
           idx: 2,
           image: portfolioTest,
           filterVal: ["android", "web"],
+          subTitle: "Android & Web",
           title: "KT GIGA 스마트팜(통합관제시스템)",
-          term: "2018.06 - 2020.09",
-          ide: "Android Studio, VS Code",
+          period: "2018.06 - 2020.09",
+          ide: "Android Studio / VS Code",
           join: "5",
           contents: [
             "App 사용자 디바이스 등록 기능",
@@ -40,11 +42,12 @@ class Portfolio extends Component {
         },
         {
           idx: 3,
-          image: profileImg2,
+          image: portfolioTest,
           filterVal: ["android", "web"],
+          subTitle: "Android & Web",
           title: "Supervisor(ARGOS RPA+)",
-          term: "2019.05 - 2019.07",
-          ide: "Android Studio, VS Code",
+          period: "2019.05 - 2019.07",
+          ide: "Android Studio / VS Code",
           join: "6",
           contents: [
             "알림 설정 화면, On-demand 화면 Vue 사용하여 Web Client 개발",
@@ -52,10 +55,11 @@ class Portfolio extends Component {
         },
         {
           idx: 4,
-          image: profileImg3,
+          image: portfolioTest,
           filterVal: ["android"],
+          subTitle: "Android",
           title: "HUDVoca(Head Up Display Vocabulary)",
-          term: "2019.09 - 2019.11",
+          period: "2019.09 - 2019.11",
           ide: "Android Studio",
           join: "2",
           contents: [
@@ -66,10 +70,11 @@ class Portfolio extends Component {
         },
         {
           idx: 5,
-          image: profileImg3,
+          image: portfolioTest,
           filterVal: ["android"],
+          subTitle: "Android",
           title: "KT 농산물 이력정보 제공 서비스",
-          term: "2018.01 - 2018.04",
+          period: "2018.01 - 2018.04",
           ide: "Android Studio",
           join: "4",
           contents: [
@@ -81,10 +86,11 @@ class Portfolio extends Component {
         },
         {
           idx: 6,
-          image: profileImg3,
+          image: portfolioTest,
           filterVal: ["android"],
+          subTitle: "Android",
           title: "GPOP(Global POP)",
-          term: "2016.11 - 2017.01",
+          period: "2016.11 - 2017.01",
           ide: "ADT(Eclipse)",
           join: "3",
           contents: [
@@ -95,10 +101,11 @@ class Portfolio extends Component {
         },
         {
           idx: 7,
-          image: profileImg,
+          image: portfolioTest,
           filterVal: ["android"],
+          subTitle: "Android",
           title: "뿜빠이",
-          term: "2016.03 - 2016.03",
+          period: "2016.03 - 2016.03",
           ide: "Android Studio",
           join: "1",
           contents: [
@@ -110,10 +117,11 @@ class Portfolio extends Component {
         },
         {
           idx: 8,
-          image: profileImg,
+          image: portfolioTest,
           filterVal: ["android"],
+          subTitle: "Andriod",
           title: "Travel Diary",
-          term: "2015.09 - 2015.09",
+          period: "2015.09 - 2015.09",
           ide: "ADT(Eclipse)",
           join: "1",
           contents: [
@@ -126,10 +134,11 @@ class Portfolio extends Component {
         },
         {
           idx: 9,
-          image: profileImg2,
+          image: portfolioTest,
           filterVal: ["android"],
+          subTitle: "Android",
           title: "Nice Timer",
-          term: "2015.05 - 2015.05",
+          period: "2015.05 - 2015.05",
           ide: "ADT(Eclipse)",
           join: "1",
           contents: [
@@ -252,6 +261,8 @@ class Portfolio extends Component {
             <div className="portfolio-title">{portfolio.title}</div>
             <div className="portfolio-dim" />
             <img src={portfolio.image} />
+            <div className="sub-title-container">{portfolio.subTitle}</div>
+            <div className="title-container">{portfolio.title}</div>
           </div>
         </div>
       );
