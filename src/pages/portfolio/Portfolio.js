@@ -21,7 +21,7 @@ class Portfolio extends Component {
           period: "2020.11 - 2020.01",
           ide: "VS Code",
           join: "2",
-          contents: ["React, scss 공부 겸 웹 포트폴리오 프로젝트 진행"],
+          contents: ["✔ React, scss 공부 겸 웹 포트폴리오 프로젝트 진행"],
         },
         {
           idx: 2,
@@ -33,11 +33,11 @@ class Portfolio extends Component {
           ide: "Android Studio / VS Code",
           join: "5",
           contents: [
-            "App 사용자 디바이스 등록 기능",
-            "App Notification 기능",
-            "App 실시간 모니터링 기능",
-            "실시간 모니터링, 이벤트 영상조회, 영농일지 관련 화면, 페로몬트랩화면 React 사용하여 Web Client 개발",
-            "RESTFull API 사용",
+            "✔ App 사용자 디바이스 등록 기능",
+            "✔ App Notification 기능",
+            "✔ App 실시간 모니터링 기능",
+            "✔ 실시간 모니터링, 이벤트 영상조회, 영농일지 관련 화면, 페로몬트랩화면 React 사용하여 Web Client 개발",
+            "✔ RESTFull API 사용",
           ],
         },
         {
@@ -50,7 +50,7 @@ class Portfolio extends Component {
           ide: "Android Studio / VS Code",
           join: "6",
           contents: [
-            "알림 설정 화면, On-demand 화면 Vue 사용하여 Web Client 개발",
+            "✔ 알림 설정 화면, On-demand 화면 Vue 사용하여 Web Client 개발",
           ],
         },
         {
@@ -63,9 +63,9 @@ class Portfolio extends Component {
           ide: "Android Studio",
           join: "2",
           contents: [
-            "차량 앞 유리창에 반사하여 공부 가능한 영단어 Application",
-            "5초, 30초, 1분, 5분 시간 설정하여 영단어가 자동으로 넘어가는 기능",
-            "일반모드, 차량모드 지원",
+            "✔ 차량 앞 유리창에 반사하여 공부 가능한 영단어 Application",
+            "✔ 5초, 30초, 1분, 5분 시간 설정하여 영단어가 자동으로 넘어가는 기능",
+            "✔ 일반모드, 차량모드 지원",
           ],
         },
         {
@@ -78,10 +78,10 @@ class Portfolio extends Component {
           ide: "Android Studio",
           join: "4",
           contents: [
-            "도매유통 디지털화 한 Application",
-            "각 사용자 계정(APC, 하역업체, 도매법인, 중도매인)에 맞는 메뉴 UI 지원",
-            "바코드 스캔 기능",
-            "전자문서 작성 및 관리 기능(전자송품장, 주문표 등)",
+            "✔ 도매유통 디지털화 한 Application",
+            "✔ 각 사용자 계정(APC, 하역업체, 도매법인, 중도매인)에 맞는 메뉴 UI 지원",
+            "✔ 바코드 스캔 기능",
+            "✔ 전자문서 작성 및 관리 기능(전자송품장, 주문표 등)",
           ],
         },
         {
@@ -94,9 +94,9 @@ class Portfolio extends Component {
           ide: "ADT(Eclipse)",
           join: "3",
           contents: [
-            "현재 연결된 네트워크 속도 측정 Application",
-            "현재 네트워크의 Ping, Upload, Download 속도 측정 및 결과 조회",
-            "Trace Route 측정 및 측정 결과 조회",
+            "✔ 현재 연결된 네트워크 속도 측정 Application",
+            "✔ 현재 네트워크의 Ping, Upload, Download 속도 측정 및 결과 조회",
+            "✔ Trace Route 측정 및 측정 결과 조회",
           ],
         },
         {
@@ -109,10 +109,10 @@ class Portfolio extends Component {
           ide: "Android Studio",
           join: "1",
           contents: [
-            "가격과 인원수를 입력하여 더치페이 가격을 계산해 주는 Application",
-            "더치페이 된 가격, 은행명, 계좌번호를 카카오톡으로 전송 가능",
-            "Admob 라이브러리 사용(광고)",
-            "Kakao API 사용",
+            "✔ 가격과 인원수를 입력하여 더치페이 가격을 계산해 주는 Application",
+            "✔ 더치페이 된 가격, 은행명, 계좌번호를 카카오톡으로 전송 가능",
+            "✔ Admob 라이브러리 사용(광고)",
+            "✔ Kakao API 사용",
           ],
         },
         {
@@ -125,11 +125,11 @@ class Portfolio extends Component {
           ide: "ADT(Eclipse)",
           join: "1",
           contents: [
-            "여행을 다니며 사진을 찍고, 추억을 실시간으로 기록하는 Application",
-            "SQLite 사용하여 데이터 저장",
-            "등록된 여행 날짜의 1년 뒤 같은 날짜에 푸시 알림으로 표시",
-            "글 메모, 카메라 메모 기능",
-            "메모 기능의 글자 속성 변경 기능",
+            "✔ 여행을 다니며 사진을 찍고, 추억을 실시간으로 기록하는 Application",
+            "✔ SQLite 사용하여 데이터 저장",
+            "✔ 등록된 여행 날짜의 1년 뒤 같은 날짜에 푸시 알림으로 표시",
+            "✔ 글 메모, 카메라 메모 기능",
+            "✔ 메모 기능의 글자 속성 변경 기능",
           ],
         },
         {
@@ -142,10 +142,10 @@ class Portfolio extends Component {
           ide: "ADT(Eclipse)",
           join: "1",
           contents: [
-            "공부 및 낮잠, 시간 개념이 없는 사람을 위한 Application",
-            "시, 분을 입력 후 타이머가 울릴 타입(진동, 소리) 선택",
-            "저장 후 타이머 울릴 시간 표시",
-            "수학 연산 정답 확인을 통한 알림 중지",
+            "✔ 공부 및 낮잠, 시간 개념이 없는 사람을 위한 Application",
+            "✔ 시, 분을 입력 후 타이머가 울릴 타입(진동, 소리) 선택",
+            "✔ 저장 후 타이머 울릴 시간 표시",
+            "✔ 수학 연산 정답 확인을 통한 알림 중지",
           ],
         },
       ], //포트폴리오 전체 json
