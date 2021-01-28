@@ -5,17 +5,38 @@ class PortfolioModal extends Component {
   render() {
     const { show, toggle, portfolioInfo } = this.props;
 
+    let contentsComp = portfolioInfo.contents.map((contents) => {
+      return (
+        <div>
+          {contents}
+          <br />
+        </div>
+      );
+    });
+
     return (
       <div>
         <Modal contentClassName="custom-modal" isOpen={show} toggle={toggle}>
-          <ModalHeader toggle={toggle}>{portfolioInfo.title}</ModalHeader>
           <ModalBody>
             <img src={portfolioInfo.image} width="100%" height="auto" />
-            <div className="title">{portfolioInfo.title}</div>
-            <div className="contents">{portfolioInfo.contents}</div>
-            <div className="term">기간 {portfolioInfo.term}</div>
-            <div className="ide">IDE {portfolioInfo.ide}</div>
-            <div className="join">참여 {portfolioInfo.join}명</div>
+            <span className="close-btn" onClick={toggle}>
+              X
+            </span>
+            <div className="sub-title-container">{portfolioInfo.subTitle}</div>
+            <div className="title-container">{portfolioInfo.title}</div>
+            <div className="contents-container">{contentsComp}</div>
+            <div className="period-container">
+              <div className="container-title">PERIOD</div>
+              <div className="container-contents">{portfolioInfo.period}</div>
+            </div>
+            <div className="ide-container">
+              <div className="container-title">IDE</div>
+              <div className="container-contents">{portfolioInfo.ide}</div>
+            </div>
+            <div className="join-container">
+              <div className="container-title">JOIN</div>
+              <div className="container-contents">{portfolioInfo.join} 명</div>
+            </div>
           </ModalBody>
         </Modal>
       </div>
