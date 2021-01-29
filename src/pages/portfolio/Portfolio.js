@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import profileImg from "../../images/screensaver_01.png";
-import profileImg2 from "../../images/homepage_01.png";
-import profileImg3 from "../../images/webbanner_01.png";
+import portfolioImg02 from "../../images/portfolio_img02.png";
+import portfolioImg03 from "../../images/portfolio_img03.png";
+import portfolioImg04 from "../../images/portfolio_img04.png";
+import portfolioImg06 from "../../images/portfolio_img06.png";
 import portfolioTest from "../../images/portfolio_test.png";
 import Pagination from "components/Pagination";
 import PortfolioModal from "components/PortfolioModal/PortfolioModal";
@@ -26,7 +27,7 @@ class Portfolio extends Component {
         },
         {
           idx: 2,
-          image: portfolioTest,
+          image: portfolioImg02,
           filterVal: ["android", "web"],
           subTitle: "Android & Web",
           title: "KT GIGA 스마트팜(통합관제시스템)",
@@ -37,14 +38,16 @@ class Portfolio extends Component {
             "✔ App 사용자 디바이스 등록 기능",
             "✔ App Notification 기능",
             "✔ App 실시간 모니터링 기능",
-            "✔ 실시간 모니터링, 이벤트 영상조회, 영농일지 관련 화면, 페로몬트랩화면 React 사용하여 Web Client 개발",
+            "✔ 실시간 모니터링, 이벤트 영상조회,",
+            "　　영농일지 관련 화면, 페로몬트랩화면",
+            "ㅤㅤReact 사용하여 Web Client 개발",
             "✔ RESTFull API 사용",
           ],
           fontColor: "white",
         },
         {
           idx: 3,
-          image: portfolioTest,
+          image: portfolioImg03,
           filterVal: ["android", "web"],
           subTitle: "Android & Web",
           title: "Supervisor(ARGOS RPA+)",
@@ -58,7 +61,7 @@ class Portfolio extends Component {
         },
         {
           idx: 4,
-          image: portfolioTest,
+          image: portfolioImg04,
           filterVal: ["android"],
           subTitle: "Android",
           title: "HUDVoca(Head Up Display Vocabulary)",
@@ -91,7 +94,7 @@ class Portfolio extends Component {
         },
         {
           idx: 6,
-          image: portfolioTest,
+          image: portfolioImg06,
           filterVal: ["android"],
           subTitle: "Android",
           title: "GPOP(Global POP)",
