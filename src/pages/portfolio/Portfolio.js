@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import portfolioImg01 from "../../images/portfolio_img01.png";
 import portfolioImg02 from "../../images/portfolio_img02.png";
 import portfolioImg03 from "../../images/portfolio_img03.png";
 import portfolioImg04 from "../../images/portfolio_img04.png";
 import portfolioImg05 from "../../images/portfolio_img05.png";
 import portfolioImg06 from "../../images/portfolio_img06.png";
 import portfolioImg07 from "../../images/portfolio_img07.png";
-import portfolioTest from "../../images/portfolio_test.png";
 import Pagination from "components/Pagination";
 import PortfolioModal from "components/PortfolioModal/PortfolioModal";
 
@@ -17,7 +17,7 @@ class Portfolio extends Component {
       portfolioArr: [
         {
           idx: 1,
-          image: portfolioTest,
+          image: portfolioImg01,
           filterVal: ["web"],
           subTitle: "Web",
           title: "반응형 웹 포트폴리오",
