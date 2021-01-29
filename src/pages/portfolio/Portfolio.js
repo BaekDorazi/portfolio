@@ -24,7 +24,7 @@ class Portfolio extends Component {
           period: "2020.11 - 2020.01",
           ide: "VS Code",
           join: "2",
-          contents: ["✔ React, scss 공부 겸 웹 포트폴리오 프로젝트 진행"],
+          contents: ["✔ React, scss 스터디 겸 웹 포트폴리오 프로젝트 진행"],
           fontColor: "black", //배경색 어두운색일때 흰색으로 하고 아닐때 검정색으로 하기위해 추가
         },
         {
