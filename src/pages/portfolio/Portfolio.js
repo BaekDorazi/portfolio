@@ -45,7 +45,7 @@ class Portfolio extends Component {
             "ㅤㅤReact 사용하여 Web Client 개발",
             "✔ RESTFull API 사용",
           ],
-          fontColor: "white",
+          fontColor: "black",
         },
         {
           idx: 3,
