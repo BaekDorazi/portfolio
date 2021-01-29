@@ -98,8 +98,8 @@ class Profile extends Component {
             <div>
               <div className="icon-font">
                 <span class={elem.iconClassName}>{iconArr}</span>
-                {elem.name}
               </div>
+              {elem.iconName}
             </div>
           );
         });
