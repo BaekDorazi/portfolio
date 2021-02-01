@@ -26,6 +26,22 @@ class PortfolioModal extends Component {
       <div>
         <Modal contentClassName="custom-modal" isOpen={show} toggle={toggle}>
           <ModalBody className={portfolioInfo.fontColor}>
+            <span
+              className="test1"
+              onClick={() => {
+                toggle(portfolioInfo.idx - 1, true);
+              }}
+            >
+              ◀
+            </span>
+            <span
+              className="test2"
+              onClick={() => {
+                toggle(portfolioInfo.idx + 1, true);
+              }}
+            >
+              ▶
+            </span>
             <img src={portfolioInfo.image} width="100%" height="auto" />
             <span className="close-btn" onClick={toggle}>
               X

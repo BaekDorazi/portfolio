@@ -246,12 +246,14 @@ class Portfolio extends Component {
   };
 
   //모달창 상태 변경 메소드
-  toggleModal = (idx) => {
+  toggleModal = (idx, isOpen) => {
+    console.log("idx == ", idx);
+    console.log("isOpen == ", isOpen);
     const { portfolioModal, showPortfolioArr } = this.state;
     let portfolioInfo = showPortfolioArr.find((elem) => elem.idx === idx); //선택 된 포트폴리오 정보 모달로 넘겨주기 위해
 
     this.setState({
-      portfolioModal: !portfolioModal,
+      portfolioModal: isOpen !== undefined ? isOpen : !portfolioModal,
       portfolioInfo: portfolioInfo,
     });
   };

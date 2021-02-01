@@ -1,3 +1,21 @@
+.test1 {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  left: -10%;
+  top: 50%;
+  font-size: 10rem;
+  z-index: 900;
+}
+
+.test2 {
+  position: absolute;
+  transform: translateX(50%) translateY(-50%);
+  right: -10%;
+  top: 50%;
+  font-size: 10rem;
+  z-index: 900;
+}
+
 .custom-modal {
   width: 50%;
   height: auto;
