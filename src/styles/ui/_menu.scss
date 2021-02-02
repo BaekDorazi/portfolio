@@ -12,28 +12,40 @@
     justify-content: center;
     padding: 10px;
     width: 40%;
-    color: #000000;
-    font-size: 1rem;
     text-align: center;
-    -webkit-touch-callout: none;
-    user-select: none;
-    cursor: pointer;
+    -webkit-touch-callout: none; //크롬에서 선택 안되도록
+    user-select: none; //드래그 못하도록
+    cursor: pointer; //커서모양 pointer로 설정
   }
 
-  .mouse-over {
+  //최신 디바이스 기준 가로 1440px 잡음
+  @media (max-width: 1440px) {
+    .menu {
+      display: none; //메뉴 숨김
+    }
+  }
+
+  .mouse-over-effect {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #16151b;
     margin: 0 15px;
-    font-size: 1rem;
-    letter-spacing: 1px;
     position: relative;
     display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 1px;
   }
 
-  .mouse-over:before {
+  .mouse-over-font-color {
+    color: #16151b;
+  }
+
+  .selected-font-color {
+    color: #0db1b0;
+  }
+
+  .mouse-over-effect:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -43,7 +55,7 @@
     animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   }
 
-  .mouse-over:hover:before {
+  .mouse-over-effect:hover:before {
     animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
   }
 
@@ -88,24 +100,5 @@
     nav a:nth-child(#{$i}) {
       animation: show 0.2s #{$i * 0.1+1}s ease 1 both;
     }
-  }
-
-  @media (max-width: 1144px) {
-    .menu {
-      flex-direction: column;
-    }
-  }
-
-  .selected-menu {
-    font-family: "Oswald", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #0db1b0;
-    margin: 0 15px;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    position: relative;
-    display: inline-block;
   }
 }

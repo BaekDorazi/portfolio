@@ -22,8 +22,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Intro"
-                      ? "mouse-over selected-menu"
-                      : "mouse-over"
+                      ? "mouse-over-effect selected-font-color"
+                      : "mouse-over-effect mouse-over-font-color"
                   }
                   onClick={() => fullpageApi.moveTo(1, 0)}
                 >
@@ -32,8 +32,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Profile"
-                      ? "mouse-over selected-menu"
-                      : "mouse-over"
+                      ? "mouse-over-effect selected-font-color"
+                      : "mouse-over-effect mouse-over-font-color"
                   }
                   onClick={() => fullpageApi.moveTo(2, 0)}
                 >
@@ -42,8 +42,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Career"
-                      ? "mouse-over selected-menu"
-                      : "mouse-over"
+                      ? "mouse-over-effect selected-font-color"
+                      : "mouse-over-effect mouse-over-font-color"
                   }
                   onClick={() => fullpageApi.moveTo(3, 0)}
                 >
@@ -52,8 +52,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Portfolio"
-                      ? "mouse-over selected-menu"
-                      : "mouse-over"
+                      ? "mouse-over-effect selected-font-color"
+                      : "mouse-over-effect mouse-over-font-color"
                   }
                   onClick={() => fullpageApi.moveTo(4, 0)}
                 >
@@ -62,8 +62,8 @@ class Menu extends Component {
                 <div
                   className={
                     showPageName === "Contact"
-                      ? "mouse-over selected-menu"
-                      : "mouse-over"
+                      ? "mouse-over-effect selected-font-color"
+                      : "mouse-over-effect mouse-over-font-color"
                   }
                   onClick={() => fullpageApi.moveTo(5, 0)}
                 >
