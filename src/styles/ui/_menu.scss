@@ -15,6 +15,9 @@
     color: #000000;
     font-size: 1rem;
     text-align: center;
+    -webkit-touch-callout: none;
+    user-select: none;
+    cursor: pointer;
   }
 
   .mouse-over {
@@ -98,7 +101,7 @@
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #0DB1B0;
+    color: #0db1b0;
     margin: 0 15px;
     font-size: 1rem;
     letter-spacing: 1px;
