@@ -58,3 +58,10 @@ button {
 .position {
   position: relative;
 }
+
+@media (max-width: 1440px) {
+  //왼쪽에 메뉴 이동하는 동그라미
+  .fp-left {
+    display: none;
+  }
+}

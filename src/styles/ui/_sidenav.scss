@@ -16,3 +16,9 @@
     align-self: center;
   }
 }
+
+@media (max-width: 1440px) {
+  .sidenav-container {
+    display: none;
+  }
+}
