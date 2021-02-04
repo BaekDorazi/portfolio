@@ -18,13 +18,6 @@
     cursor: pointer; //커서모양 pointer로 설정
   }
 
-  //최신 디바이스 기준 가로 1440px 잡음
-  @media (max-width: 1440px) {
-    .menu {
-      display: none; //메뉴 숨김
-    }
-  }
-
   .mouse-over-effect {
     font-family: "Oswald", sans-serif;
     font-weight: 500;
