@@ -67,6 +67,23 @@
     right: -100%;
     z-index: 1; //position의 우선순위
     transition: all 0.35s;
+
+    .side-menu-container {
+      text-align: center;
+
+      .menu-text {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 3%;
+        cursor: pointer;
+      }
+
+      //메뉴에 마우스 올렸을때
+      .menu-text:hover {
+        color: #000;
+      }
+    }
   }
 
   #menuicon:checked + label + div {

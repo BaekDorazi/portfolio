@@ -15,21 +15,36 @@ class MobileMenu extends Component {
           <ReactFullpage
             render={({ state, fullpageApi }) => {
               return (
-                <div className="menu">
-                  <div className="" onClick={() => fullpageApi.moveTo(1, 0)}>
-                    Intro
+                <div className="side-menu-container">
+                  <div
+                    className="menu-text"
+                    onClick={() => fullpageApi.moveTo(1, 0)}
+                  >
+                    INTRO
                   </div>
-                  <div className="" onClick={() => fullpageApi.moveTo(2, 0)}>
-                    Profile
+                  <div
+                    className="menu-text"
+                    onClick={() => fullpageApi.moveTo(2, 0)}
+                  >
+                    PROFILE
                   </div>
-                  <div className="" onClick={() => fullpageApi.moveTo(3, 0)}>
-                    Career
+                  <div
+                    className="menu-text"
+                    onClick={() => fullpageApi.moveTo(3, 0)}
+                  >
+                    CAREER
                   </div>
-                  <div className="" onClick={() => fullpageApi.moveTo(4, 0)}>
-                    Portfolio
+                  <div
+                    className="menu-text"
+                    onClick={() => fullpageApi.moveTo(4, 0)}
+                  >
+                    PORTFOLIO
                   </div>
-                  <div className="" onClick={() => fullpageApi.moveTo(5, 0)}>
-                    Contact
+                  <div
+                    className="menu-text"
+                    onClick={() => fullpageApi.moveTo(5, 0)}
+                  >
+                    CONTACT
                   </div>
                 </div>
               );
