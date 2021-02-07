@@ -5,10 +5,8 @@
   display: flex;
   background: #0db1b0;
 
-  @media (max-width: 1144px) {
-    display: flex;
+  @media (max-width: 1440px) {
     flex-direction: column;
-    padding-top: 139px;
   }
 
   //포트폴리오 필터
@@ -44,12 +42,20 @@
     content: "(";
     left: 25%;
     transform: translateX(10px);
+
+    @media (max-width: 1440px) {
+      left: 0;
+    }
   }
 
   .brackets div:after {
     content: ")";
     right: 25%;
     transform: translateX(-10px);
+
+    @media (max-width: 1440px) {
+      right: 0;
+    }
   }
 
   .brackets div:hover:before,
