@@ -6,15 +6,28 @@
   height: 100%;
   padding-top: 44px;
 
-  .left-contents {
+  @media (max-width: 1440px) {
+    & {
+      padding-top: 0px;
+      flex-direction: column;
+    }
+  }
+
+  .image-container {
     background: #0db1b0;
     flex: 1;
 
-    //Android & Front-end Developer
     .profile-text {
       color: #fff;
       margin-top: 60px;
       font-size: 2rem;
+
+      @media (max-width: 1440px) {
+        & {
+          margin-top: 30px;
+          font-size: 1.3rem;
+        }
+      }
 
       font {
         font-weight: 800;
@@ -33,20 +46,28 @@
     .personality-container {
       color: #fff;
       margin-top: 30px;
+      font-size: 1.2rem;
 
       span {
         background: #0db1b0;
         margin: 0 10px;
         border: 3px solid #fff;
         border-radius: 30px;
-        font-size: 1.2rem;
+
         font-weight: 600;
         padding: 10px;
+      }
+
+      @media (max-width: 1440px) {
+        & {
+          margin: 30px;
+          font-size: 0.5rem;
+        }
       }
     }
   }
 
-  .right-contents {
+  .profile-contents-container {
     background: #fff;
     flex: 1;
     height: 100%;
@@ -67,11 +88,23 @@
           font-size: 2rem;
           font-weight: 800;
           color: #0db1b0;
+
+          @media (max-width: 1440px) {
+            & {
+              font-size: 1.5rem;
+            }
+          }
         }
 
         .rest-title {
           font-size: 1.5rem;
           font-weight: 700;
+
+          @media (max-width: 1440px) {
+            & {
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
@@ -86,6 +119,12 @@
         color: #666666;
         font-size: 1rem;
         width: 30%;
+
+        @media (max-width: 1440px) {
+          & {
+            font-size: 0.8rem;
+          }
+        }
       }
 
       .content {
@@ -94,6 +133,12 @@
         font-size: 1.3rem;
         margin-left: 10px;
         font-weight: 600;
+
+        @media (max-width: 1440px) {
+          & {
+            font-size: 1rem;
+          }
+        }
       }
     }
 

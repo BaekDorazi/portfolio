@@ -122,14 +122,14 @@ class Profile extends Component {
 
     return (
       <div className="profile-container">
-        <div className="left-contents">
+        <div className="image-container">
           <div className="profile-text">
             Just Do It! 하는 <font>백도형</font>입니다.
           </div>
           <img className="profile-img" src={profileImg} />
           <div className="personality-container">{personalityComp}</div>
         </div>
-        <div className="right-contents">{profileBlockComp}</div>
+        <div className="profile-contents-container">{profileBlockComp}</div>
       </div>
     );
   }
