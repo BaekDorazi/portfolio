@@ -17,6 +17,13 @@
     flex: 1.5;
     align-self: center;
 
+    @media (max-width: 1440px) {
+      display: flex;
+      flex: 1;
+      margin: 0;
+      padding-top: 10px;
+    }
+
     .filter {
       text-decoration: none;
       font: 20px Raleway;
@@ -69,6 +76,11 @@
     background: #fff;
     padding: 30px;
 
+    @media (max-width: 1440px) {
+      flex: 9;
+      padding: 15px;
+    }
+
     //포트폴리오 리스트
     .portfolio-list {
       display: grid;
@@ -76,10 +88,10 @@
       grid-template-rows: 1fr 1fr;
       margin-bottom: 15px;
 
-      @media (max-width: 1144px) {
+      @media (max-width: 1440px) {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
       }
 
       .screen {
@@ -142,6 +154,10 @@
         left: 6.5%;
         font-size: 10pt;
         color: black;
+
+        @media (max-width: 1440px) {
+          font-size: 5pt;
+        }
       }
 
       .title-container {
@@ -151,6 +167,11 @@
         font-size: 17pt;
         font-weight: 700;
         color: black;
+
+        @media (max-width: 1440px) {
+          top: 15%;
+          font-size: 8pt;
+        }
       }
 
       .black {
@@ -179,6 +200,10 @@
         font-size: 2rem;
         transform: translateX(-50%) translateY(-50%);
         z-index: 2;
+
+        @media (max-width: 1440px) {
+          font-size: 1rem;
+        }
       }
 
       .screen:hover .portfolio-dim {
