@@ -25,6 +25,7 @@ class PortfolioModal extends Component {
     return (
       <div>
         <Modal contentClassName="custom-modal" isOpen={show} toggle={toggle}>
+          <ModalHeader toggle={toggle}>{portfolioInfo.title}</ModalHeader>
           <ModalBody className={portfolioInfo.fontColor}>
             <img src={portfolioInfo.image} width="100%" height="auto" />
             <span className="close-btn" onClick={toggle}>
