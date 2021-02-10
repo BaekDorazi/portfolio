@@ -246,9 +246,10 @@
       flex: 1;
       justify-content: space-around;
 
-      @media (max-width: 1144px) {
+      @media (max-width: 1440px) {
         margin-top: 25px;
         align-self: center;
+        width: 90%;
       }
 
       .chart {
