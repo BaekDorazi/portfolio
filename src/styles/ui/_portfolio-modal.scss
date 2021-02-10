@@ -19,6 +19,112 @@
 
 .modal-body {
   padding: 0 !important; //modal body의 패딩을 없애주기 위해
+
+  .web-display {
+    display: block;
+
+    @media (max-width: 1440px) {
+      display: none;
+    }
+  }
+
+  .mobile-display {
+    display: none;
+
+    @media (max-width: 1440px) {
+      display: block;
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .sub-title-container {
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-size: 13pt;
+
+    @media (max-width: 1440px) {
+      position: relative;
+    }
+  }
+
+  .title-container {
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    font-size: 25pt;
+    font-weight: 500;
+  }
+
+  .contents-container {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    font-size: 12pt;
+
+    @media (max-width: 1440px) {
+      position: relative;
+    }
+  }
+
+  .period-container {
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+    display: flex;
+    font-size: 11pt;
+    width: 100%;
+
+    @media (max-width: 1440px) {
+      position: relative;
+    }
+  }
+
+  .ide-container {
+    position: absolute;
+    bottom: 9%;
+    left: 5%;
+    display: flex;
+    font-size: 11pt;
+    width: 100%;
+
+    @media (max-width: 1440px) {
+      position: relative;
+    }
+  }
+
+  .join-container {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    font-size: 11pt;
+    width: 100%;
+
+    @media (max-width: 1440px) {
+      position: relative;
+    }
+  }
+
+  .container-title {
+    font-weight: 700;
+    width: 10%;
+
+    @media (max-width: 1440px) {
+      width: 20%;
+    }
+  }
+
+  .container-contents {
+  }
 }
 
 .black {
@@ -27,99 +133,4 @@
 
 .white {
   color: #fff;
-}
-
-.close-btn {
-  position: absolute;
-  right: 5%;
-  top: 5%;
-  font-size: 2rem;
-  font-weight: 600;
-  cursor: pointer;
-
-  @media (max-width: 1440px) {
-    display: none;
-  }
-}
-
-.sub-title-container {
-  position: absolute;
-  top: 4%;
-  left: 5%;
-  font-size: 13pt;
-
-  @media (max-width: 1440px) {
-    position: relative;
-  }
-}
-
-.title-container {
-  position: absolute;
-  top: 7%;
-  left: 5%;
-  font-size: 25pt;
-  font-weight: 500;
-
-  @media (max-width: 1440px) {
-    position: relative;
-    // display: none;
-  }
-}
-
-.contents-container {
-  position: absolute;
-  top: 18%;
-  left: 5%;
-  font-size: 12pt;
-
-  @media (max-width: 1440px) {
-    position: relative;
-  }
-}
-
-.period-container {
-  position: absolute;
-  bottom: 13%;
-  left: 5%;
-  display: flex;
-  font-size: 11pt;
-  width: 100%;
-
-  @media (max-width: 1440px) {
-    position: relative;
-  }
-}
-
-.ide-container {
-  position: absolute;
-  bottom: 9%;
-  left: 5%;
-  display: flex;
-  font-size: 11pt;
-  width: 100%;
-
-  @media (max-width: 1440px) {
-    position: relative;
-  }
-}
-
-.join-container {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
-  display: flex;
-  font-size: 11pt;
-  width: 100%;
-
-  @media (max-width: 1440px) {
-    position: relative;
-  }
-}
-
-.container-title {
-  font-weight: 700;
-  width: 10%;
-}
-
-.container-contents {
 }
