@@ -75,6 +75,7 @@
       position: relative;
       margin: 10px 0;
       font-size: 1.2rem;
+      width: 90%;
     }
   }
 
@@ -142,4 +143,8 @@
 
 .white {
   color: #fff;
+
+  @media (max-width: 1440px) {
+    color: black;
+  }
 }
