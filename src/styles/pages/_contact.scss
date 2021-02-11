@@ -143,15 +143,14 @@
   .image-area {
     flex: 1;
 
+    @media (max-width: 1440px) {
+      width: 80%;
+    }
+
     ul {
       display: flex;
       list-style: none;
       justify-content: center;
-
-      //가로 사이즈가 1145px 미만이면
-      @media (max-width: 1440px) {
-        padding-top: 40px;
-      }
     }
 
     ul li {
@@ -173,8 +172,8 @@
       padding: 30px;
       border: 1px solid #d0d0d0;
 
-      @media (max-width:1440px) {
-        font-size: 10rem;
+      @media (max-width: 1440px) {
+        display: none;
       }
     }
 
@@ -238,25 +237,29 @@
       justify-content: space-around;
       margin-top: 50px;
 
-      div {
-        a:link {
-          color: #212529;
-          text-decoration: none;
+      @media (max-width: 1440px) {
+        .icon-mail {
+          display: none;
         }
-        a:visited {
-          color: #212529;
-          text-decoration: none;
-        }
-        a:hover {
-          color: #212529;
-          text-decoration: none;
-        }
+      }
+
+      a:link {
+        color: #212529;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #212529;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #212529;
+        text-decoration: none;
       }
 
       .box {
         font-size: 2rem;
 
-        @media (max-width:1440px) {
+        @media (max-width: 1440px) {
           font-size: 1.3rem;
         }
 

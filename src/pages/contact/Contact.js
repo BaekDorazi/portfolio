@@ -9,6 +9,7 @@ class Contact extends Component {
     this.state = {};
   }
 
+  //contact에서 submit 하면 email로 전송 하는 method
   sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,6 +28,18 @@ class Contact extends Component {
           console.log(error.text);
         }
       );
+  };
+
+  //mail 버튼 누르면 이메일 클립보드에 복사 하는 method
+  copyStringToClipboard = (str) => {
+    var el = document.createElement("textarea");
+    el.value = str;
+    el.setAttribute("readonly", "");
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    alert("e-mail이 복사되었습니다. ✿˘◡˘✿");
   };
 
   render() {
@@ -100,24 +113,22 @@ class Contact extends Component {
           </ul>
 
           <div className="stats">
-            <div>
-              <a href="https://open.kakao.com/o/sEJSdtPc" target="_blank">
-                <i className="icon-bubbles box"> talk</i>
-              </a>
-            </div>
-            <div>
-              <i className="icon-mail box"> mail</i>
-            </div>
-            <div>
-              <a href="https://www.instagram.com/ana_zombi/" target="_blank">
-                <i className="icon-instagram box"> sns</i>
-              </a>
-            </div>
-            <div>
-              <a href="https://github.com/BaekDorazi" target="_blank">
-                <i className="icon-github box"> git</i>
-              </a>
-            </div>
+            <a href="https://open.kakao.com/o/sEJSdtPc" target="_blank">
+              <i className="icon-bubbles box"> talk</i>
+            </a>
+            <a href="https://www.instagram.com/ana_zombi/" target="_blank">
+              <i className="icon-instagram box"> sns</i>
+            </a>
+            <a href="https://github.com/BaekDorazi" target="_blank">
+              <i className="icon-github box"> git</i>
+            </a>
+            <i
+              className="icon-mail box"
+              onClick={() => this.copyStringToClipboard("qorehgud@gmail.com")}
+            >
+              {" "}
+              mail
+            </i>
           </div>
         </div>
       </div>
