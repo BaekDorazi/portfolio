@@ -1,14 +1,46 @@
 import React, { Component } from "react";
+import emailjs from "emailjs-com";
 
 import WorkspaceHwky from "components/Illustrations/WorkspaceHwky";
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "dohyung-gmail", //service id
+        "dohyung-gmail-template", //template id
+        e.target,
+        "user_qMvYsOK8ttl50nBSFJJ2s" //user id
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   render() {
     return (
       <div className="contact-container">
         <div class="contact">
           <div id="container">
             <h2>contact</h2>
-            <form action="#" method="post" id="contact_form">
+            <form
+              action="#"
+              method="post"
+              id="contact_form"
+              onSubmit={this.sendEmail}
+            >
               <div class="name">
                 <label for="name"></label>
                 <input
