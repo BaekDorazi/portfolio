@@ -28,8 +28,8 @@ class Career extends Component {
           acquisitionYear: "2011",
           acquireLicense: [
             {
-              licenseName: "ICDL",
-              issuingAgency: "ICDL",
+              licenseName: "ICDL Certificate",
+              issuingAgency: "한국생산성본부(KPC)",
               issueDate: "2011.10.10",
               isBr: false,
             },
