@@ -26,7 +26,7 @@ class Profile extends Component {
         content: "Seoul 2017 Maker Faire 참가",
       },
       {
-        date: "2017.09.29 - 2017.09.30",
+        date: "2018.09.29 - 2018.09.30",
         content: "Seoul 2018 Maker Faire 참가",
       },
     ];
