@@ -17,7 +17,7 @@ class Profile extends Component {
     ];
     let experiencesArr = [
       {
-        date: "2020.08.14",
+        date: "2010.08.14",
         content: "제 8회 청소년 게임캠프 2010 전국 게임공모전 - 장려상",
       },
       { date: "2010.09.03", content: "제 8회 전국학생게임공모전 - 입선" },
