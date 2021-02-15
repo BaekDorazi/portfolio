@@ -19,7 +19,7 @@ class Career extends Component {
             {
               licenseName: "워드프로세서 2급",
               issuingAgency: "대한상공회의소",
-              issueDate: "22005.11.23",
+              issueDate: "2005.11.23",
               isBr: false,
             },
           ],
@@ -122,6 +122,25 @@ class Career extends Component {
       );
     });
 
+    let showMobileLicense = licenseArr.map((license) => {
+      let acquireLicense = license.acquireLicense.map((elem) => {
+        return (
+          <p className="licenseName">
+            {elem.licenseName}
+            <span className="issue-Agency-Date">
+              ({elem.issueDate}. {elem.issuingAgency})
+            </span>
+          </p>
+        );
+      });
+      return (
+        <div className="Year">
+          <div className="underline">{license.acquisitionYear}년</div>
+          {acquireLicense}
+        </div>
+      );
+    });
+
     let showSkill = skillArr.map((skill) => {
       return (
         <div className="chart">
@@ -151,6 +170,7 @@ class Career extends Component {
                 <ul>{showLicense}</ul>
               </div>
             </div>
+            <div className="license-container-mo">{showMobileLicense}</div>
           </div>
           <div className="skill-container">{showSkill}</div>
         </div>
