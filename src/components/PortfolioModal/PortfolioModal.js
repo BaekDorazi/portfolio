@@ -38,15 +38,19 @@ class PortfolioModal extends Component {
               <div className="title-container">{portfolioInfo.title}</div>
               <div className="contents-container">{contentsComp}</div>
               <div className="period-container">
-                <div className="container-title">PERIOD</div>
+                <div className="container-title">개발 기간</div>
                 <div className="container-contents">{portfolioInfo.period}</div>
               </div>
               <div className="ide-container">
                 <div className="container-title">IDE</div>
                 <div className="container-contents">{portfolioInfo.ide}</div>
               </div>
+              <div className="skill-container">
+                <div className="container-title">사용 기술</div>
+                <div className="container-contents">{portfolioInfo.skill}</div>
+              </div>
               <div className="join-container">
-                <div className="container-title">JOIN</div>
+                <div className="container-title">참여</div>
                 <div className="container-contents">
                   {portfolioInfo.join} 명
                 </div>
@@ -58,15 +62,19 @@ class PortfolioModal extends Component {
                 {portfolioInfo.subTitle}
               </div>
               <div className="period-container">
-                <div className="container-title">PERIOD</div>
+                <div className="container-title">개발 기간</div>
                 <div className="container-contents">{portfolioInfo.period}</div>
               </div>
               <div className="ide-container">
                 <div className="container-title">IDE</div>
                 <div className="container-contents">{portfolioInfo.ide}</div>
               </div>
+              <div className="skill-container">
+                <div className="container-title">사용 기술</div>
+                <div className="container-contents">{portfolioInfo.skill}</div>
+              </div>
               <div className="join-container">
-                <div className="container-title">JOIN</div>
+                <div className="container-title">참여</div>
                 <div className="container-contents">
                   {portfolioInfo.join} 명
                 </div>

@@ -81,7 +81,7 @@
 
   .period-container {
     position: absolute;
-    bottom: 13%;
+    bottom: 17%;
     left: 5%;
     display: flex;
     font-size: 11pt;
@@ -95,6 +95,21 @@
   }
 
   .ide-container {
+    position: absolute;
+    bottom: 13%;
+    left: 5%;
+    display: flex;
+    font-size: 11pt;
+    width: 100%;
+
+    @media (max-width: 1440px) {
+      position: relative;
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .skill-container {
     position: absolute;
     bottom: 9%;
     left: 5%;

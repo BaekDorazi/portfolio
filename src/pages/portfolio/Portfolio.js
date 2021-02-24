@@ -23,6 +23,7 @@ class Portfolio extends Component {
           title: "반응형 웹 포트폴리오",
           period: "2020.11 - 2021.01",
           ide: "VS Code",
+          skill: "ReactJS / HTML / SCSS",
           join: "2",
           contents: [
             "✔ React, scss 스터디 겸 웹 포트폴리오 프로젝트",
@@ -39,32 +40,33 @@ class Portfolio extends Component {
           title: "KT GIGA 스마트팜(통합관제시스템)",
           period: "2018.06 - 2020.09",
           ide: "Android Studio / VS Code",
+          skill: "ReactJS / HTML / SCSS / JAVA",
           join: "5",
           contents: [
             "✔ App 사용자 디바이스 등록, Notification",
             "　　CCTV 실시간 모니터링 기능 개발",
             "✔ Web 실시간 모니터링, 이벤트 영상조회,",
             "　　영농일지 관련 화면, 페로몬 트랩화면 개발(React)",
-            "✔ RESTFull API 사용",
+            "✔ RESTFul API 사용",
           ],
           fontColor: "black",
         },
-        {
-          idx: 3,
-          image: portfolioImg03,
-          filterVal: ["android", "web"],
-          subTitle: "Android & Web",
-          title: "Supervisor(ARGOS RPA+)",
-          period: "2019.05 - 2019.07",
-          ide: "Android Studio / VS Code",
-          join: "6",
-          contents: [
-            "✔ 알림 설정 화면, On-demand 화면 개발(Vue)",
-            "✔ Google Play Store 등록",
-            "https://play.google.com/store/apps/details?id=com.alabs.rpa.chief"
-          ],
-          fontColor: "black",
-        },
+        // {
+        //   idx: 3,
+        //   image: portfolioImg03,
+        //   filterVal: ["android", "web"],
+        //   subTitle: "Android & Web",
+        //   title: "Supervisor(ARGOS RPA+)",
+        //   period: "2019.05 - 2019.07",
+        //   ide: "Android Studio / VS Code",
+        //   join: "6",
+        //   contents: [
+        //     "✔ 알림 설정 화면, On-demand 화면 개발(Vue)",
+        //     "✔ Google Play Store 등록",
+        //     "https://play.google.com/store/apps/details?id=com.alabs.rpa.chief"
+        //   ],
+        //   fontColor: "black",
+        // },
         {
           idx: 4,
           image: portfolioImg04,
@@ -73,6 +75,7 @@ class Portfolio extends Component {
           title: "HUDVoca",
           period: "2019.09 - 2019.11",
           ide: "Android Studio",
+          skill: "JAVA",
           join: "2",
           contents: [
             "✔ Head Up Display Vocabulary",
@@ -93,6 +96,7 @@ class Portfolio extends Component {
           title: "KT 농산물 이력정보 제공 서비스",
           period: "2018.01 - 2018.04",
           ide: "Android Studio",
+          skill: "JAVA",
           join: "4",
           contents: [
             "✔ 도매유통 디지털화 Application",
@@ -111,6 +115,7 @@ class Portfolio extends Component {
           title: "GPOP(Global POP)",
           period: "2016.11 - 2017.01",
           ide: "ADT(Eclipse)",
+          skill: "JAVA",
           join: "3",
           contents: [
             "✔ 현재 연결된 네트워크 속도 측정 Application",
@@ -128,6 +133,7 @@ class Portfolio extends Component {
           title: "Go!Dutch",
           period: "2016.03 - 2016.03",
           ide: "Android Studio",
+          skill: "JAVA",
           join: "1",
           contents: [
             "✔ 가격과 인원수를 입력하여",
