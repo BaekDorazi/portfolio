@@ -7,6 +7,10 @@
   padding-top: 44px;
   align-items: center;
 
+  @media (max-width: 1440px) {
+    padding-top: 0;
+  }
+
   //자격증 영역
   .license-skill-container {
     display: flex;
@@ -256,18 +260,11 @@
         display: flex;
         margin-bottom: 15px;
 
-        .skill-icon-area {
-          i {
-            float: left;
-            font-size: 60px;
-            padding: 10px;
-            margin-right: 10px;
-          }
-
-          .skill-name {
-            font-size: 1.1rem;
-            font-weight: 600;
-          }
+        i {
+          float: left;
+          font-size: 5rem;
+          padding: 10px;
+          margin-right: 10px;
         }
       }
     }
