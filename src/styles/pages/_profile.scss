@@ -24,8 +24,8 @@
 
       @media (max-width: 1440px) {
         & {
-          margin-top: 30px;
-          font-size: 1.3rem;
+          margin-top: 15px;
+          font-size: 1.1rem;
         }
       }
 
@@ -60,7 +60,7 @@
 
       @media (max-width: 1440px) {
         & {
-          margin: 30px;
+          margin: 20px;
           font-size: 0.5rem;
         }
       }
@@ -78,11 +78,19 @@
       text-align: left;
       padding: 2% 3%;
 
+      @media (max-width: 1440px) {
+        padding: 1% 2%;
+      }
+
       .title {
         padding-left: 1rem;
         margin-bottom: 10px;
         letter-spacing: 0.05rem; //자간
         font-family: "Tinos", serif;
+
+        @media (max-width: 1440px) {
+          margin-bottom: 5px;
+        }
 
         .front-title {
           font-size: 2rem;
@@ -90,9 +98,7 @@
           color: #0db1b0;
 
           @media (max-width: 1440px) {
-            & {
-              font-size: 1.5rem;
-            }
+            font-size: 1.2rem;
           }
         }
 
@@ -101,9 +107,7 @@
           font-weight: 700;
 
           @media (max-width: 1440px) {
-            & {
-              font-size: 1.2rem;
-            }
+            font-size: 1rem;
           }
         }
       }
@@ -114,6 +118,10 @@
       list-style-type: square;
       margin-bottom: 10px;
 
+      @media (max-width: 1440px) {
+        margin-bottom: 5px;
+      }
+
       .date {
         font-family: "Oswald", sans-serif;
         color: #666666;
@@ -121,9 +129,7 @@
         width: 30%;
 
         @media (max-width: 1440px) {
-          & {
-            font-size: 0.8rem;
-          }
+          font-size: 0.7rem;
         }
       }
 
@@ -135,9 +141,7 @@
         font-weight: 600;
 
         @media (max-width: 1440px) {
-          & {
-            font-size: 1rem;
-          }
+          font-size: 0.8rem;
         }
       }
     }
@@ -154,6 +158,10 @@
         background-color: #dddddd;
         margin: 0 20px;
         border-radius: 50%;
+
+        @media (max-width: 1440px) {
+          margin: 0 10px;
+        }
       }
     }
   }
