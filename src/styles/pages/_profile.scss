@@ -40,6 +40,10 @@
       width: 60%;
       height: auto;
       padding-top: 10px;
+
+      @media (max-width: 1440px) {
+        width: 50%;
+      }
     }
 
     //성격 부분
@@ -59,10 +63,8 @@
       }
 
       @media (max-width: 1440px) {
-        & {
-          margin: 20px;
-          font-size: 0.5rem;
-        }
+        margin: 20px;
+        font-size: 0.5rem;
       }
     }
   }
@@ -70,9 +72,13 @@
   .profile-contents-container {
     background: #fff;
     flex: 1;
-    height: 100%;
+    height: auto;
     display: grid;
     grid-template-rows: 0.2fr 0.6fr 0.2fr 0.6fr;
+
+    @media (max-width: 1440px) {
+      flex: 1.5;
+    }
 
     .profile-block {
       text-align: left;
