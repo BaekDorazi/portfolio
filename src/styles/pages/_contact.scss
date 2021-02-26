@@ -13,12 +13,17 @@
 
   @media (max-width: 1440px) {
     flex-direction: column;
+    padding: 10px;
   }
 
   //contact 영역
   .contact {
     flex: 1;
     padding: 10px;
+
+    @media (max-width: 1440px) {
+      padding: 0;
+    }
 
     input,
     textarea {
@@ -42,10 +47,24 @@
       max-height: 650px;
       position: relative;
       width: 100%;
+
+      @media (max-width: 1440px) {
+        border: 0;
+
+        #contact_form {
+          @media (max-width: 1440px) {
+            padding: 0;
+          }
+        }
+      }
     }
 
     form {
       padding: 45px;
+
+      @media (max-width: 1440px) {
+        padding: 20px;
+      }
     }
 
     h2 {
@@ -55,11 +74,21 @@
       letter-spacing: 7px;
       text-align: center;
       padding-top: 45px;
+
+      @media (max-width: 1440px) {
+        padding: 20px;
+        letter-spacing: 3px;
+      }
     }
 
     .email {
       float: right;
       width: 45%;
+
+      @media (max-width: 1440px) {
+        float: none;
+        width: 100%;
+      }
     }
 
     input[type="text"],
@@ -96,6 +125,11 @@
     .name {
       float: left;
       width: 45%;
+
+      @media (max-width: 1440px) {
+        float: none;
+        width: 100%;
+      }
     }
 
     .subject {
@@ -238,6 +272,8 @@
       margin-top: 50px;
 
       @media (max-width: 1440px) {
+        margin-top: 0;
+
         .icon-mail {
           display: none;
         }
