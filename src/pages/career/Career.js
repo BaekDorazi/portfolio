@@ -69,7 +69,7 @@ class Career extends Component {
           icon: "icon-android",
           percentVal: 90,
           color: "#3DDC84",
-          contents: "Android - 안드로이드 UI 구성 및 Google Play",
+          contents: "Android - 안드로이드 UI 구성 및 Google Play Store",
         },
         {
           icon: "icon-kotlin",
@@ -81,7 +81,7 @@ class Career extends Component {
           icon: "icon-arduino",
           percentVal: 60,
           color: "#00979D",
-          contents: "Arduino - Maker Faire 전시회 2번 참여",
+          contents: "Arduino - Maker Faire 전시회 2회 참여",
         },
         {
           icon: "icon-react",
