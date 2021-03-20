@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Intro from "pages/intro/Intro";
+import IntroF from "pages/intro/IntroF";
 import Profile from "pages/profile/Profile";
 import Career from "pages/career/Career";
 import Portfolio from "pages/portfolio/Portfolio";
@@ -39,7 +40,8 @@ class FullPage extends Component {
             return (
               <div id="fullpage-wrapper">
                 <div className="section section1">
-                  <Intro />
+                  {/* <Intro /> */}
+                  <IntroF />
                 </div>
                 <div className="section">
                   <Profile />
