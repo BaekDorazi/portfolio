@@ -3,6 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Intro from "pages/intro/Intro";
 import IntroF from "pages/intro/IntroF";
 import Profile from "pages/profile/Profile";
+import ProfileF from "pages/profile/ProfileF";
 import Career from "pages/career/Career";
 import Portfolio from "pages/portfolio/Portfolio";
 import Contact from "pages/contact/Contact";
@@ -44,7 +45,8 @@ class FullPage extends Component {
                   <IntroF />
                 </div>
                 <div className="section">
-                  <Profile />
+                  {/* <Profile /> */}
+                  <ProfileF />
                 </div>
                 <div className="section">
                   <Career
