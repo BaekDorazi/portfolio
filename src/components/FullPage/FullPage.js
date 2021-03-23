@@ -5,6 +5,7 @@ import IntroF from "pages/intro/IntroF";
 import Profile from "pages/profile/Profile";
 import ProfileF from "pages/profile/ProfileF";
 import Career from "pages/career/Career";
+import CareerF from "pages/career/CareerF";
 import Portfolio from "pages/portfolio/Portfolio";
 import Contact from "pages/contact/Contact";
 
@@ -49,7 +50,15 @@ class FullPage extends Component {
                   <ProfileF />
                 </div>
                 <div className="section">
-                  <Career
+                  {/* <Career
+                    isPageFocus={
+                      !state.destination ||
+                      state.destination.anchor === "Career"
+                        ? true
+                        : false
+                    } //Career 페이지에 포커싱 되어있을때
+                  /> */}
+                  <CareerF
                     isPageFocus={
                       !state.destination ||
                       state.destination.anchor === "Career"
