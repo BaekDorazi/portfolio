@@ -7,6 +7,7 @@ import ProfileF from "pages/profile/ProfileF";
 import Career from "pages/career/Career";
 import CareerF from "pages/career/CareerF";
 import Portfolio from "pages/portfolio/Portfolio";
+import PortfolioF from "pages/portfolio/PortfolioF";
 import Contact from "pages/contact/Contact";
 
 class FullPage extends Component {
@@ -68,7 +69,8 @@ class FullPage extends Component {
                   />
                 </div>
                 <div className="section">
-                  <Portfolio />
+                  {/* <Portfolio /> */}
+                  <PortfolioF />
                 </div>
                 <div className="section">
                   <Contact />
