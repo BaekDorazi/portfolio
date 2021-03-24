@@ -18,9 +18,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          window.alert("메일이 전송되었습니다.");
         },
         (error) => {
           console.log(error.text);
+          window.alert("메일 전송에 실패하였습니다.");
         }
       );
   };
@@ -42,12 +44,7 @@ const Contact = () => {
       <div class="contact">
         <div id="container">
           <h2>contact</h2>
-          <form
-            action="#"
-            method="post"
-            id="contact_form"
-            onSubmit={sendEmail}
-          >
+          <form action="#" method="post" id="contact_form" onSubmit={sendEmail}>
             <div class="name">
               <label for="name"></label>
               <input
@@ -127,6 +124,6 @@ const Contact = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;
