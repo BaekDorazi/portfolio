@@ -7,3 +7,4 @@ export { default as CareerF } from "career/CareerF";
 export { default as Portfolio } from "portfolio/Portfolio";
 export { default as PortfolioF } from "portfolio/PortfolioF";
 export { default as Contact } from "contact/Contact";
+export { default as ContactF } from "contact/ContactF";

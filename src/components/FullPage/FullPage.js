@@ -9,6 +9,7 @@ import CareerF from "pages/career/CareerF";
 import Portfolio from "pages/portfolio/Portfolio";
 import PortfolioF from "pages/portfolio/PortfolioF";
 import Contact from "pages/contact/Contact";
+import ContactF from "pages/contact/ContactF";
 
 class FullPage extends Component {
   onLeave(origin, destination, direction) {
@@ -73,7 +74,8 @@ class FullPage extends Component {
                   <PortfolioF />
                 </div>
                 <div className="section">
-                  <Contact />
+                  {/* <Contact /> */}
+                  <ContactF />
                 </div>
               </div>
             );

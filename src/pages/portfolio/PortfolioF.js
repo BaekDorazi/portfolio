@@ -16,13 +16,17 @@ const Portfolio = () => {
 
   useEffect(() => {
     let _portfolioArr = PortfolioData.portfolioArr.slice(0, rowCount);
+    console.log("useEffect111 _portfolioArr ", _portfolioArr);
 
     setFilterPortfolioArr(PortfolioData.portfolioArr);
     setShowPortfolioArr(_portfolioArr);
     setTotalCount(PortfolioData.portfolioArr.length);
 
-    console.log("useEffect111", PortfolioData.portfolioArr);
+    console.log("useEffect111 filterPortfolioArr = ", filterPortfolioArr);
+    console.log("useEffect111 showPortfolioArr = ", showPortfolioArr);
   }, []);
+  console.log("useEffect111 filterPortfolioArr = ", filterPortfolioArr);
+    console.log("useEffect111 showPortfolioArr = ", showPortfolioArr);
 
   useEffect(() => {
     let offset = rowCount * activePage - rowCount;
@@ -31,7 +35,9 @@ const Portfolio = () => {
     setShowPortfolioArr(_portfolioArr);
 
     console.log("useEffect222", PortfolioData.portfolioArr);
-  }, []);
+    console.log("useEffect222 filterPortfolioArr = ", filterPortfolioArr);
+    console.log("useEffect222 showPortfolioArr = ", showPortfolioArr);
+  }, [activePage]);
 
   //필터 눌렀을때 처리되는 메소드
   const handleOnFilterClick = (num) => {
