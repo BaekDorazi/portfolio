@@ -1,71 +1,66 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "components/Header/Header";
-// import FullPage from "components/FullPage/FullPage";
 import FullPage from "components/FullPage/FullPageF";
 import Launcher from "components/Launcher/Launcher";
 
-import { connect } from "react-redux";
-import { setAppState } from "store/modules/AppConfig";
+/**
+ *  @component    App
+ *  @param        none
+ *  @description  App 컴포넌트
+ */
+const App = () => {
+  /**
+   *  @memberOf     App
+   *  @var          {boolean} isTimeOut
+   *  @description  런처 화면 보여주기 위한 상태 값
+   */
+  const [isTimeOut, setIsTimeOut] = useState(false);
 
-const mapStateToProps = ({}) => ({});
+  /**
+   *  @memberOf     App
+   *  @var          {boolean} pageName
+   *  @description  현재 보여지는 페이지
+   */
+  const [pageName, setPageName] = useState(null);
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isSetTimeOut: false, //런쳐 화면 보여주기 위한 state 값
-      showPageName: null, //현재 보여지는 페이지 저장
-    };
-  }
-
-  componentDidMount() {
-    const { setAppState } = this.props;
-    setAppState(this.state); //App의 state 값을 저장
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    const { setAppState } = this.props;
-
-    if (this.state !== prevState) {
-      setAppState(this.state);
-    }
-  }
-
-  //현재 보여지는 페이지 이름 가지고 오는 method
-  handlePageChange = (pageName) => {
-    this.setState({
-      showPageName: pageName,
-    });
+  /**
+   *  @memberOf     App
+   *  @function     handlePageChange
+   *  @param        {string} pName - 페이지 이름
+   *  @return       none
+   *  @description  페이지 변경될때 마다 페이지 이름 저장하는 함수
+   */
+  const handlePageChange = (pName) => {
+    setPageName(pName);
   };
 
-  render() {
-    const { isSetTimeOut, showPageName } = this.state;
-
-    if (!isSetTimeOut) {
+  /**
+   *  @listens      [] - 최초 실행
+   *  @description  2초후에 isTimeOut 값을 true로 변경해줌
+   */
+  useEffect(() => {
+    if (!isTimeOut) {
       setTimeout(() => {
-        this.setState({ isSetTimeOut: true });
+        setIsTimeOut(true);
       }, 2000);
     }
+  }, []);
 
-    return (
-      <div>
-        {!isSetTimeOut && (
-          <div style={{ width: "100%", height: "100%" }}>
-            <Launcher />
-          </div>
-        )}
-        {isSetTimeOut && (
-          <div className="app-container">
-            <FullPage
-              className="full-page"
-              handlePageChange={this.handlePageChange}
-            />
-            <Header showPageName={showPageName} />
-          </div>
-        )}
-      </div>
-    );
-  }
-}
+  return (
+    <>
+      {!isTimeOut && (
+        <div style={{ width: "100%", height: "100%" }}>
+          <Launcher />
+        </div>
+      )}
+      {isTimeOut && (
+        <div className="app-container">
+          <FullPage className="full-page" handlePageChange={handlePageChange} />
+          <Header showPageName={pageName} />
+        </div>
+      )}
+    </>
+  );
+};
 
-export default connect(mapStateToProps, { setAppState })(App);
+export default App;
