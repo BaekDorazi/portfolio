@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "components/Header/Header";
-import FullPage from "components/FullPage/FullPage";
+// import FullPage from "components/FullPage/FullPage";
+import FullPage from "components/FullPage/FullPageF";
 import Launcher from "components/Launcher/Launcher";
 
 import { connect } from "react-redux";
