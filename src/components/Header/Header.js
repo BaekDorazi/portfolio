@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Logo from "components/Header/Logo";
 import Menu from "components/Header/Menu";
 import SideNav from "components/Header/SideNav";
