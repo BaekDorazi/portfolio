@@ -5,6 +5,7 @@ import ProfileF from "pages/profile/ProfileF";
 import CareerF from "pages/career/CareerF";
 import PortfolioF from "pages/portfolio/PortfolioF";
 import ContactF from "pages/contact/ContactF";
+import Design from "pages/design/Design";
 
 const FullPage = (props) => {
   const { handlePageChange } = props;
@@ -51,6 +52,9 @@ const FullPage = (props) => {
               </div>
               <div className="section">
                 <ContactF />
+              </div>
+              <div className="section">
+                <Design />
               </div>
             </div>
           );

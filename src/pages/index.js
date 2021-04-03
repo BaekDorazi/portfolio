@@ -8,3 +8,4 @@ export { default as Portfolio } from "portfolio/Portfolio";
 export { default as PortfolioF } from "portfolio/PortfolioF";
 export { default as Contact } from "contact/Contact";
 export { default as ContactF } from "contact/ContactF";
+export {default as Css } from "css/Css";

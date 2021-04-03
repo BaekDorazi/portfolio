@@ -60,6 +60,16 @@ const Menu = (props) => {
               >
                 Contact
               </div>
+              <div
+                className={
+                  showPageName === "Design"
+                    ? "mouse-over-effect selected-font-color"
+                    : "mouse-over-effect mouse-over-font-color"
+                }
+                onClick={() => fullpageApi.moveTo(6, 0)}
+              >
+                Design
+              </div>
             </div>
           );
         }}
